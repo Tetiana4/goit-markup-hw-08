@@ -1,0 +1,61 @@
+.hero {
+  max-width: 1600px;
+  text-align: center;
+
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $back-dark;
+  /* outline: 1px solid red; */
+}
+.overlay {
+  max-width: 1600px;
+  max-height: 600px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img(1).jpg");
+  background-position: center;
+  background-size: cover;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__title {
+  text-transform: uppercase;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  color: $white-text;
+
+  padding-top: 200px;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+.hero__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  min-width: 136px;
+  border: 1px transparent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: $cubic-color;
+  background-color: $blue;
+  color: #ffffff;
+
+  padding: 10px 32px;
+  margin-bottom: 200px;
+  margin-top: 30px;
+}

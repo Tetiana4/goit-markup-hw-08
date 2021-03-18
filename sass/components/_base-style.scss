@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  margin: 0;
+  /* padding-top: 80px; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+p,
+ul,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.insta,
+.tw,
+.fb,
+.in {
+  fill: currentColor;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 1px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+}

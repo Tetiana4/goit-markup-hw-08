@@ -1,0 +1,38 @@
+.costumer-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.costumer-list {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.costumer-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.costumer-list__link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $grey-border;
+  border-radius: 4px;
+
+  transition: $cubic-color;  
+  fill: $grey-border;
+
+  &:hover,
+  &focus {
+    border: 1px solid $blue;
+    fill: $blue;  
+  }
+}

@@ -1,0 +1,46 @@
+.address-link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $grey-text;
+  transition: $cubic-color;
+
+  &:hover,
+  &:focus {
+    color: $blue;  
+  }
+  
+  &:last-child {
+    margin-left: 50px;
+  }
+}
+
+.icon-mail {
+  content: "";
+  display: inline-block;
+
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/icons.svg/header1.svg);
+
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.icon-tel {
+  content: "";
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/icons.svg/header2.svg);
+
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+ 
