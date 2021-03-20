@@ -11,15 +11,16 @@
   color: $grey-text;
   transition: $cubic-color;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 10px;
+  }
+
   &:hover,
   &:focus {
     color: $blue;
   }
 
   &:last-child {
-    @media screen and (min-width: 780px) {
-      margin-top: 10px;
-    }
     @media screen and (min-width: 1200px) {
       margin-left: 50px;
     }
