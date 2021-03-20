@@ -13,11 +13,25 @@
 
   &:hover,
   &:focus {
-    color: $blue;  
+    color: $blue;
   }
-  
+
   &:last-child {
-    margin-left: 50px;
+    @media screen and (min-width: 780px) {
+      margin-top: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 50px;
+    }
+  }
+
+  // @media screen and (min-width: 768px) {
+  //   margin-top: 21px;
+  //   margin-bottom: 21px;
+  // }
+
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -42,5 +56,3 @@
   fill: currentColor;
   margin-right: 10px;
 }
-
- 
