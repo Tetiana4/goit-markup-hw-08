@@ -275,6 +275,8 @@ h6 {
 }
 
 .container {
+  min-width: 320px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 1px solid red; */
@@ -284,19 +286,19 @@ h6 {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -325,7 +327,7 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .page-header__contact {
-    margin-left: 84px;
+    margin-left: auto;
   }
 }
 
@@ -340,8 +342,9 @@ h6 {
 
 @media screen and (max-width: 1199px) {
   .page-header__contact {
-    margin-top: 21px;
-    margin-bottom: 21px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -492,8 +495,30 @@ h6 {
 /* margin-bottom: 0;
   margin-top: 0; */
 .container-portfolio {
+  min-width: 320px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container-portfolio {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-portfolio {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-portfolio {
+    max-width: 1200px;
+  }
 }
 
 .portfolio-section {
@@ -531,20 +556,32 @@ h6 {
   margin-right: 8px;
 }
 
-.button-list {
-  display: block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 36px;
+@media screen and (min-width: 480px) {
+  .button-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 46px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-list {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+  }
 }
 
 .portfolio-thumb {
@@ -592,6 +629,14 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-set {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
@@ -717,26 +762,37 @@ h6 {
   /* outline: 1px solid red; */
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container-footer {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container-footer {
+    max-width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-footer {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 1px solid red; */
-    margin-left: auto;
-    margin-right: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -780,6 +836,12 @@ h6 {
     line-height: 1.14;
     margin-bottom: 20px;
     display: block;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .title-footer {
+    text-align: center;
   }
 }
 
@@ -848,6 +910,24 @@ h6 {
           justify-content: center;
   margin-left: 12px;
   font-weight: 700;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .form-footer {
+    margin-top: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .form-footer__input {

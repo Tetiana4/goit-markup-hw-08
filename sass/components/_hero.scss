@@ -8,35 +8,80 @@
   background-color: $back-dark;
   /* outline: 1px solid red; */
 }
+
 .overlay {
-  max-width: 1600px;
-  max-height: 600px;
+  // max-width: 1600px;
+  // max-height: 600px;
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/img.jpg");
+    background-position: center;
 
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/Img(1).jpg");
-  background-position: center;
-  background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 
-  margin-left: auto;
-  margin-right: auto;
+    width: 480px;
+    height: 400px;
+
+    background-size: 480px 400px;
+  }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .overlay {
-      background-image: url("img@2x.jpg");
+      background-image: url("img@2x.png");
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/imgt.jpg");
+    background-position: center;
+
+    width: 768px;
+    height: 400px;
+    background-size: 768px 400px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url("imgt@2x.png");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/imgd.jpg");
+    background-position: center;
+
+    width: 1200px;
+    height: 600px;
+    background-size: 1200px 600px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url("imgd@2x.png");
     }
   }
 }
-
-width: 480px;
-height: 320px;
-background-image: url("photo.png");
-background-size: 480px 320px;
 
 .hero__title {
   text-transform: uppercase;
