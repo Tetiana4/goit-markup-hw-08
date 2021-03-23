@@ -71,10 +71,12 @@
     font-size: 18px;
     line-height: 1.22;
   }
-}
 
-.mobile-social__item:not(:last-child) {
-  margin-right: 20px;
+  &__item:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
 
 .menu-button {
