@@ -6,7 +6,6 @@
   height: 100%;
 
   background: rgba(0, 0, 0, 0.2);
-
   overflow-y: scroll;
 }
 
@@ -17,6 +16,7 @@
 }
 
 .modal {
+  overflow-y: scroll;
   @media screen and (min-width: 1200px) {
     position: absolute;
     top: 50%;
