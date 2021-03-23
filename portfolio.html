@@ -14,6 +14,12 @@
         <div class="container">
             <nav class="page-header__nav">
                 <a href="./index.html" lang="en" class="logo"><span class="logo--blue">Web</span>Studio</a>
+                <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                
+                        <use class="icon-menu" href="./images/icons.svg/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
                 <ul class="site-nav">
     
                     <li class="site-nav__item">
@@ -351,6 +357,54 @@
             </div>
         </div>
     </footer>
-
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-button js-close-menu">
+            <svg width="40" height="40">
+                <use class="icon-cross" href="./images/icons.svg/sprite.svg#icon-cross"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu">
+    
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./index.html">Студия</a>
+            </li>
+    
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+    
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#contacts">Контакты</a>
+            </li>
+        </ul>
+    
+        <ul>
+            <li class="mobile-address">
+                <a href="tel:+380961111111" class="mobile-address__tel">+380961111111</a>
+            </li>
+            <li class="mobile-address">
+                <a href="mailto:info@devstudio.com" class="mobile-address__mail">info@devstudio.com</a>
+            </li>
+        </ul>
+    
+        <ul class="mobile-social">
+            <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
