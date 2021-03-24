@@ -1434,6 +1434,7 @@ h6 {
 }
 
 .mobile-menu__link {
+  position: relative;
   color: #212121;
   font-weight: 500;
   line-height: 1.17;
@@ -1445,6 +1446,30 @@ h6 {
 
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: #2196f3;
+}
+
+.mobile-address__mail::after,
+.mobile-address__tel::after,
+.mobile-social__link::after,
+.mobile-menu__link::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  border-radius: 2px;
+  -webkit-transition: width 0.3ms;
+  transition: width 0.3ms;
+  background-color: #2196f3;
+  opacity: 1;
+}
+
+.mobile-address__mail:hover::after,
+.mobile-address__tel:hover::after,
+.mobile-social__link:hover::after,
+.mobile-menu__link:hover::after {
+  width: 100%;
+  display: block;
+  -webkit-transition: width 0.3ms;
+  transition: width 0.3ms;
 }
 
 .mobile-menu__item:not(:last-child) {
@@ -1464,9 +1489,11 @@ h6 {
 .mobile-address__mail {
   color: #757575;
   text-decoration: none;
+  position: relative;
 }
 
 .mobile-address__tel {
+  position: relative;
   text-decoration: none;
   color: #2196f3;
 }
@@ -1479,6 +1506,7 @@ h6 {
 }
 
 .mobile-social__link {
+  position: relative;
   color: #2196f3;
   text-decoration: none;
   font-weight: 500;
