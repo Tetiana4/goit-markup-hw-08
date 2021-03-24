@@ -4,7 +4,7 @@
 
 .container-portfolio {
   min-width: 320px;
-  max-width: 1200px;
+  // max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -30,7 +30,6 @@
   @media screen and (max-width: 767px) {
     padding-bottom: 60px;
   }
-  /* outline: 1px solid red; */
 }
 
 .option-btn {
@@ -59,8 +58,10 @@
   margin-right: 8px;
 }
 
-.button-list__item:nth-child(-n + 5) {
-  margin-bottom: 15px;
+.button-list__item:nth-child(-n + 3) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .button-list {
@@ -73,9 +74,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    display: block;
-    display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -93,8 +91,7 @@
   position: absolute;
   content: "";
   bottom: 0;
-  /* opacity: 0; */
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.55;
 
@@ -104,6 +101,14 @@
   color: $white-text;
   background-color: $blue-transparent;
   height: 100%;
+
+  @media screen and (min-width: 748px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 
 .card-set {
@@ -129,10 +134,7 @@
 
 .card-set__thumb {
   height: 294px;
-
-  @media screen and (min-width: 480px) {
-    height: 294px;
-  }
+  width: 100%;
 }
 
 .card-set__img {
@@ -147,15 +149,17 @@
   margin-right: 30px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 354px) {
+  @media screen and (min-width: 480px) {
     margin: 15px;
-    width: 354px;
+    width: 450px;
+    height: 404px;
   }
 
   @media screen and (min-width: 768px) {
     margin: 15px;
     width: calc((100% - 90px) / 2);
     width: 354px;
+    height: 440px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -175,7 +179,7 @@
 .card-set__link {
   display: flex;
   flex-direction: column;
-
+  width: 100%;
   transition: box-shadow $cubic-color;
 
   &:hover,
