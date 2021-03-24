@@ -1,20 +1,23 @@
-  $white-text: rgba(255, 255, 255, 1);
-  $white-text-op60: rgba(255, 255, 255, 0.6);
+$white-text: rgba(255, 255, 255, 1);
+$white-text-op60: rgba(255, 255, 255, 0.6);
 
-  $grey-text: rgba(117, 117, 117, 1);
-  $grey-border: rgba(175, 177, 184, 1);
-  $blue: rgba(33, 150, 243, 1);
-  $blue-transparent: rgba(33, 150, 243, 0.9);
+$grey-text: rgba(117, 117, 117, 1);
+$grey-border: rgba(175, 177, 184, 1);
+$blue: rgba(33, 150, 243, 1);
+$blue-transparent: rgba(33, 150, 243, 0.9);
 
-  $black: rgba(33, 33, 33, 1);
-  $black-dark: rgba(0, 0, 0, 1);
+$black: rgba(33, 33, 33, 1);
+$black-dark: rgba(0, 0, 0, 1);
 
-  $back-white: rgba(255, 255, 255, 0.1);
-  $back-lightwhite: rgba(245, 244, 250, 1);
-  $back-ecru: rgba(238, 238, 238, 1);
-  $back-offwhite: rgba(236, 236, 236, 1);
-  $back-dark: rgba(47, 48, 58, 1);
-  $back-grey: rgba(47, 48, 58, 0.8); 
+$back-white: rgba(255, 255, 255, 0.1);
+$back-lightwhite: rgba(245, 244, 250, 1);
+$back-ecru: rgba(238, 238, 238, 1);
+$back-offwhite: rgba(236, 236, 236, 1);
+$back-dark: rgba(47, 48, 58, 1);
+$back-grey: rgba(47, 48, 58, 0.8);
 
-  $cubic-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+$cubic-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$mobile: 480px;
+$tablet: 768px;
+$decktop: 1200px;

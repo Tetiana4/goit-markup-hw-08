@@ -5,19 +5,15 @@
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-
-  /* outline: 1px solid red; */
 }
 
 .overlay {
-  // max-width: 1600px;
-  // max-height: 600px;
   background-position: center;
   background-color: $back-dark;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     padding-bottom: 118px;
     padding-top: 118px;
     background-image: linear-gradient(
@@ -41,7 +37,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -63,7 +59,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $decktop) {
     padding-bottom: 200px;
     padding-top: 200px;
     background-image: linear-gradient(
@@ -123,6 +119,5 @@
   color: #ffffff;
 
   padding: 10px 32px;
-  // margin-bottom: 200px;
   margin-top: 30px;
 }

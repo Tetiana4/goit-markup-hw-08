@@ -292,7 +292,7 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 767px;
   }
 }
 
@@ -361,7 +361,6 @@ h6 {
   line-height: 1.19;
   text-decoration: none;
   color: #000000;
-  /* outline: 1px solid red; */
 }
 
 .logo--blue {
@@ -600,7 +599,7 @@ h6 {
   height: 100%;
 }
 
-@media screen and (min-width: 748px) {
+@media screen and (min-width: 768px) {
   .actions {
     padding: 49px 24px;
   }

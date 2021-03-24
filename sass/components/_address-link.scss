@@ -11,7 +11,7 @@
   color: $grey-text;
   transition: $cubic-color;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-top: 10px;
   }
 
@@ -21,15 +21,10 @@
   }
 
   &:last-child {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $decktop) {
       margin-left: 50px;
     }
   }
-
-  // @media screen and (min-width: 768px) {
-  //   margin-top: 21px;
-  //   margin-bottom: 21px;
-  // }
 
   @media screen and (max-width: 767px) {
     display: none;
