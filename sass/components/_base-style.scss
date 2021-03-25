@@ -43,7 +43,7 @@ h6 {
 
 .container {
   min-width: 320px;
-  max-width: $decktop;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 1px solid red; */
@@ -55,7 +55,7 @@ h6 {
   }
 
   @media screen and (min-width: $tablet) {
-    max-width: 767px;
+    max-width: $tablet;
   }
 
   @media screen and (min-width: $decktop) {

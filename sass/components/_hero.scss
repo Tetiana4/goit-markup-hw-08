@@ -12,8 +12,10 @@
   background-color: $back-dark;
   margin-left: auto;
   margin-right: auto;
-
-  @media screen and (min-width: $mobile) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  @media screen and (min-width: 320px) {
     padding-bottom: 118px;
     padding-top: 118px;
     background-image: linear-gradient(
@@ -22,11 +24,10 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/img.jpg");
+    // min-width: 480px;
+    // height: 400px;
 
-    width: 480px;
-    height: 400px;
-
-    background-size: 480px 400px;
+    // background-size: 480px 400px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -44,11 +45,10 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/imgt.jpg");
-    background-position: center;
-
-    width: 768px;
-    height: 400px;
-    background-size: 768px 400px;
+    // background-position: center;
+    // min-width: 768px;
+    // height: 400px;
+    // background-size: 768px 400px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -69,9 +69,9 @@
       ),
       url("../images/imgd.jpg");
 
-    width: 1200px;
+    // min-width: 1200px;
     height: 600px;
-    background-size: 1200px 600px;
+    // background-size: 1200px 600px;
   }
 
   @media (min-device-pixel-ratio: 2),

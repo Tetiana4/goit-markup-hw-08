@@ -276,7 +276,7 @@ h6 {
 
 .container {
   min-width: 320px;
-  max-width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 1px solid red; */
@@ -292,7 +292,7 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 767px;
+    max-width: 768px;
   }
 }
 
@@ -494,17 +494,17 @@ h6 {
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .overlay {
     padding-bottom: 118px;
     padding-top: 118px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.jpg");
-    width: 480px;
-    height: 400px;
-    background-size: 480px 400px;
   }
 }
 
@@ -518,10 +518,6 @@ h6 {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/imgt.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/imgt.jpg");
-    background-position: center;
-    width: 768px;
-    height: 400px;
-    background-size: 768px 400px;
   }
 }
 
@@ -537,9 +533,7 @@ h6 {
     padding-top: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/imgd.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/imgd.jpg");
-    width: 1200px;
     height: 600px;
-    background-size: 1200px 600px;
   }
 }
 
@@ -639,6 +633,7 @@ h6 {
   .advantages-list__item {
     margin: 15px;
     width: calc((100% - 8 * 30px) / 4);
+    width: 270px;
   }
 }
 
@@ -1004,7 +999,7 @@ h6 {
   /* outline: 1px solid red; */
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container-footer {
     max-width: 480px;
     margin-left: auto;
@@ -1074,7 +1069,7 @@ h6 {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .title-footer {
     text-transform: uppercase;
     font-weight: 700;
@@ -1082,6 +1077,7 @@ h6 {
     line-height: 1.14;
     margin-bottom: 20px;
     display: block;
+    max-width: 480px;
   }
 }
 
@@ -1408,6 +1404,7 @@ h6 {
 
 .menu-container {
   position: fixed;
+  overflow-y: scroll;
   padding: 48px 40px;
   left: 0;
   top: 0;
@@ -1477,6 +1474,7 @@ h6 {
   line-height: 1.17;
   font-weight: 500;
   font-size: 34px;
+  margin-top: auto;
 }
 
 .mobile-address:not(:last-child) {

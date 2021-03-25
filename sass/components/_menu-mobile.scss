@@ -1,6 +1,7 @@
 .menu-container {
   position: fixed;
 
+  overflow-y: scroll;
   padding: 48px 40px;
 
   left: 0;
@@ -67,6 +68,7 @@
   line-height: 1.17;
   font-weight: 500;
   font-size: 34px;
+  margin-top: auto;
 
   &:not(:last-child) {
     margin-bottom: 32px;
