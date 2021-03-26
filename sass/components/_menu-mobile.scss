@@ -9,12 +9,12 @@
   width: 100vw;
   height: 100vh;
   background-color: $white-text;
-  transform: translateX(100%);
+  transform: translateY(100%);
   transition: $cubic-color;
   z-index: 999;
 
   &.is-open {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -37,10 +37,10 @@
     }
   }
 }
-.mobile-adresses {
-  position: absolute;
-  top: 562px;
-}
+// .mobile-adresses {
+//   position: absolute;
+//   top: 562px;
+// }
 
 .mobile-address__mail::after,
 .mobile-address__tel::after,
@@ -94,8 +94,8 @@
 .mobile-social {
   margin-top: 64px;
   display: flex;
-  position: absolute;
-  top: 726px;
+  // position: absolute;
+  // top: 726px;
 
   &__link {
     position: relative;
