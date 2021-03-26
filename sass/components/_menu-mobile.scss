@@ -1,7 +1,7 @@
 .menu-container {
   position: fixed;
 
-  overflow-y: scroll;
+  overflow: scroll;
   padding: 48px 40px;
 
   left: 0;
@@ -11,7 +11,7 @@
   background-color: $white-text;
   transform: translateX(100%);
   transition: $cubic-color;
-  z-index: 222;
+  z-index: 999;
 
   &.is-open {
     transform: translateX(0);
@@ -36,6 +36,10 @@
       color: $blue;
     }
   }
+}
+.mobile-adresses {
+  position: absolute;
+  top: 562px;
 }
 
 .mobile-address__mail::after,
@@ -90,6 +94,8 @@
 .mobile-social {
   margin-top: 64px;
   display: flex;
+  position: absolute;
+  top: 726px;
 
   &__link {
     position: relative;
